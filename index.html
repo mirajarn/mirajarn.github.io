@@ -8,13 +8,14 @@
     <meta name="description" content="" />
     <meta name="author" content="" />
     <title>Opiskelijahyvinvointia</title>
-    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
     <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet"
         type="text/css" />
     <link href="styles.css" rel="stylesheet" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="tiedosto.js"></script>
 </head>
 
 
@@ -172,47 +173,27 @@
             <br />
             <div class="row justify-content-center">
                 <div class="col-lg-8 col-xl-7">
-                    <form id="contactForm" data-sb-form-api-token="API_TOKEN">
-                        <!-- Name input-->
+                    <form id="contactForm">
                         <div class="form-floating mb-3">
-                            <input class="form-control" id="nimi" type="text" data-sb-validations="required" />
+                            <input class="form-control" id="nimi" type="text"/>
                             <label for="name">Etu- ja sukunimi</label>
-                            <div class="invalid-feedback" data-sb-feedback="name:required">
-                                Kirjoita etu- ja sukunimesi!
-                            </div>
+                                
                         </div>
-                        <!-- Email address input-->
                         <div class="form-floating mb-3">
-                            <input class="form-control" id="email" type="email" data-sb-validations="required,email" />
-                            <label for="email">Sähköpostiosoite</label>
-                            <div class="invalid-feedback" data-sb-feedback="email:required">
-                                Kirjoita sähköpostiosoitteesi!
-                            </div>
-                            <div class="invalid-feedback" data-sb-feedback="email:email">
-                                Kirjoita voimassaoleva sähköpostiosoite
-                            </div>
+                            <input class="form-control" id="sposti" type="email"/>
+                            <label for="sposti">Sähköpostiosoite</label>
                         </div>
-                        <!-- Phone number input-->
                         <div class="form-floating mb-3">
-                            <input class="form-control" id="phone" type="tel" data-sb-validations="required" />
-                            <label for="phone">Puhelinumero</label>
-                            <div class="invalid-feedback" data-sb-feedback="phone:required">
-                                Kirjoita puhelinnumerosi!
-                            </div>
+                            <input class="form-control" id="puhnro" type="tel" />
+                            <label for="puhnro">Puhelinumero</label>
                         </div>
-                        <!-- Message input-->
                         <div class="form-floating mb-3">
-                            <textarea class="form-control" id="message" type="text" style="height: 10rem"
+                            <textarea class="form-control" id="viesti" type="text" style="height: 10rem"
                                 data-sb-validations="required"></textarea>
-                            <label for="message">Kirjoita viesti</label>
-                            <div class="invalid-feedback" data-sb-feedback="message:required">
-                                Kirjoita viesti!
-                            </div>
+                            <label for="viesti">Kirjoita viesti</label>
+                            
                         </div>
-
-
-                        <!-- Submit Button-->
-                        <button class="btn btn-primary btn-xl disabled" id="submitButton" type="submit">
+                        <button onclick="tarkistaTiedot()" class="btn btn-primary">
                             Lähetä
                         </button>
                     </form>
@@ -521,8 +502,6 @@
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="js/scripts.js"></script>
-    <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
 </body>
 
 
