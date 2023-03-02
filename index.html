@@ -1,12 +1,531 @@
+<!DOCTYPE html>
 <html lang="en">
+
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Opiskelijahyvinvointia</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet"
+        type="text/css" />
+    <link href="css/styles.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
 </head>
-<body>
-    <h1>Mirajarn</h1>
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga, vero! Laborum architecto consequatur facilis, vitae repudiandae adipisci ipsa beatae soluta sunt labore. Fugit, dolore hic rem pariatur reiciendis asperiores repellat!</p>
+
+
+<body id="page-top">
+    <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand" href="#page-top">Opiskelijahyvinvointia</a>
+            <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button"
+                data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive"
+                aria-expanded="false" aria-label="Toggle navigation">
+                Selaa
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item mx-0 mx-lg-1">
+                        <a class="nav-link py-3 px-0 px-lg-3 rounded" href="#henkinen_terveys">Henkinen terveys</a>
+                    </li>
+                    <li class="nav-item mx-0 mx-lg-1">
+                        <a class="nav-link py-3 px-0 px-lg-3 rounded" href="#liikunta">Liikunta</a>
+                    </li>
+                    <li class="nav-item mx-0 mx-lg-1">
+                        <a class="nav-link py-3 px-0 px-lg-3 rounded" href="#taukojumpat">Taukojumpat</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Masthead-->
+    <header class="masthead text-center text-white">
+        <div class="masthead-content">
+            <div class="container px-5">
+                <h1 class="masthead-heading mb-0">Henkistä ja fyysistä hyvinvointia</h2>
+                    <h2 class="masthead-subheading mb-0"> Opiskelijoilta - opiskelijoille!</h2>
+            </div>
+            <div class="divider-custom">
+                <div class="divider-custom-line"></div>
+            </div>
+
+
+            <p class="teksti">Opiskelijoiden hyvinvointi on viime aikoina ollut todella suurena puheenaiheena<br />
+                niin uutisissa, opettajilla kuin asiantuntijoilla. Terveys palvelut ovat kuitenkin ruuhkautuneet ja
+                <br />
+                opiskelijoiden henkinen terveys kärsii yhä enemmän. Tämä sivusto ei pyri eikä pysty korvaamaan <br />
+                kokonaisvaltaista ja ammattimaista terveydenhuoltoa, mutta toivomme tällä olevan positiivinen vaikutus
+                opiskelijoiden <br />
+                henkiseen terveyteen, yksinäisyyteen ja liikunnallisiin tottumuksiin!
+            </p>
+
+
+        </div>
+        <div class="bg-circle-1 bg-circle"></div>
+        <div class="bg-circle-2 bg-circle"></div>
+        <div class="bg-circle-3 bg-circle"></div>
+        <div class="bg-circle-4 bg-circle"></div>
+    </header>
+    <!-- Portfolio Section-->
+    <style>
+    </style>
+    <section class="page-section bg-primary portfolio" id="henkinen_terveys">
+        <div class="container">
+            <!-- Portfolio Section Heading-->
+            <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">
+                <div class="kysymysmerkki" data-bs-toggle="modal" data-bs-target="#portfolioModal4">
+                    <i class=" fas fa-question-circle" style="font-size:36px"></i>
+                </div>
+
+
+                Henkinen terveys
+            </h2>
+            <!-- Icon Divider-->
+            <div class="divider-custom">
+                <div class="divider-custom-line"></div>
+            </div>
+
+
+            <br />
+
+
+            <!-- Portfolio Grid Items-->
+            <div class="row justify-content-center">
+                <!-- Portfolio Item 1-->
+                <div class="col-md-6 col-lg-4 mb-5">
+                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal1">
+                        <div
+                            class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                            <div class="portfolio-item-caption-content text-center text-white">
+                                <div>Lue lisää painamalla</div>
+                            </div>
+                        </div>
+                        <img class="img-fluid" src="assets/img/portfolio/Yksi_Pieni_Linkki.png" alt="..." />
+                    </div>
+                    <br />
+                    <div class="hterveysLabel text-center">
+                        <button data-bs-toggle="modal" data-bs-target="#portfolioModal1">Mielenterveys</button>
+                    </div>
+                </div>
+                <!-- Portfolio Item 2-->
+                <div class="col-md-6 col-lg-4 mb-5">
+                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal2">
+                        <div
+                            class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                            <div class="portfolio-item-caption-content text-center text-white">
+                                <div>Lue lisää painamalla</div>
+                            </div>
+                        </div>
+                        <img class="img-fluid" src="assets/img/portfolio/Rectangle 6.png" alt="..." />
+                    </div>
+                    <br />
+                    <div class="hterveysLabel text-center">
+                        <button data-bs-toggle="modal" data-bs-target="#portfolioModal2">Vertaistuki</button>
+                    </div>
+                </div>
+                <!-- Portfolio Item 3-->
+                <div class="col-md-6 col-lg-4 mb-5">
+                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal3">
+                        <div
+                            class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                            <div class="portfolio-item-caption-content text-center text-white">
+                                <div>Lue lisää painamalla</div>
+                            </div>
+                        </div>
+                        <img class="img-fluid" src="assets/img/portfolio/group-therapy.png" alt="..." />
+                    </div>
+                    <br />
+                    <div class="hterveysLabel text-center">
+                        <button data-bs-toggle="modal" data-bs-target="#portfolioModal3">Ryhmätuki</button>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+        </div>
+    </section>
+
+
+    <!-- Contact Section-->
+    <section class="page-section bg-light " id="liikunta">
+        <div class="container">
+            <!-- Contact Section Heading-->
+            <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">
+                <div class="kysymysmerkki" data-bs-toggle="modal" data-bs-target="#portfolioModal5">
+                    <i class=" fas fa-question-circle" style="font-size:36px"></i>
+                </div>
+                Liikuntalomake
+            </h2>
+            <!-- Icon Divider-->
+            <div class="divider-custom">
+                <div class="divider-custom-line"></div>
+            </div>
+            <br />
+
+
+            <br />
+            <div class="row justify-content-center">
+                <div class="col-lg-8 col-xl-7">
+                    <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+                        <!-- Name input-->
+                        <div class="form-floating mb-3">
+                            <input class="form-control" id="nimi" type="text" data-sb-validations="required" />
+                            <label for="name">Etu- ja sukunimi</label>
+                            <div class="invalid-feedback" data-sb-feedback="name:required">
+                                Kirjoita etu- ja sukunimesi!
+                            </div>
+                        </div>
+                        <!-- Email address input-->
+                        <div class="form-floating mb-3">
+                            <input class="form-control" id="email" type="email" data-sb-validations="required,email" />
+                            <label for="email">Sähköpostiosoite</label>
+                            <div class="invalid-feedback" data-sb-feedback="email:required">
+                                Kirjoita sähköpostiosoitteesi!
+                            </div>
+                            <div class="invalid-feedback" data-sb-feedback="email:email">
+                                Kirjoita voimassaoleva sähköpostiosoite
+                            </div>
+                        </div>
+                        <!-- Phone number input-->
+                        <div class="form-floating mb-3">
+                            <input class="form-control" id="phone" type="tel" data-sb-validations="required" />
+                            <label for="phone">Puhelinumero</label>
+                            <div class="invalid-feedback" data-sb-feedback="phone:required">
+                                Kirjoita puhelinnumerosi!
+                            </div>
+                        </div>
+                        <!-- Message input-->
+                        <div class="form-floating mb-3">
+                            <textarea class="form-control" id="message" type="text" style="height: 10rem"
+                                data-sb-validations="required"></textarea>
+                            <label for="message">Kirjoita viesti</label>
+                            <div class="invalid-feedback" data-sb-feedback="message:required">
+                                Kirjoita viesti!
+                            </div>
+                        </div>
+
+
+                        <!-- Submit Button-->
+                        <button class="btn btn-primary btn-xl disabled" id="submitButton" type="submit">
+                            Lähetä
+                        </button>
+                    </form>
+                </div>
+
+
+            </div>
+
+
+        </div>
+    </section>
+    <!-- About Section-->
+    <section class="page-section bg-primary text-white mb-0" id="taukojumpat">
+        <div class="container">
+            <!-- About Section Heading-->
+            <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">
+                <div class="kysymysmerkki" data-bs-toggle="modal" data-bs-target="#portfolioModal6">
+                    <i class=" fas fa-question-circle" style="font-size:36px"></i>
+                </div>
+                Taukojumpat
+            </h2>
+            <!-- Icon Divider-->
+            <div class="divider-custom">
+                <div class="divider-custom-line"></div>
+            </div>
+            <!-- About Section Content-->
+            <div class="row justify-content-center">
+                <iframe height="650" width="400" src="https://www.youtube.com/embed/pVtj6I0akuQ">
+                </iframe>
+            </div>
+        </div>
+    </section>
+    <!-- Footer-->
+    <footer class="footer text-center">
+        <div class="container">
+            <div class="row">
+                <!-- Footer Location-->
+                <div class="col-lg-4 mb-5 mb-lg-0">
+                    <h4>Yhteystiedot</h4>
+                    <p>050 505 0505</p>
+                    <p>opiskelijahyvinvointia@gmail.com</p>
+                    <p>Osoite 12, 10200 Kaupunki</p>
+                </div>
+            </div>
+    </footer>
+    <!-- Portfolio Modals-->
+    <!-- Portfolio Modal 1-->
+    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" aria-labelledby="portfolioModal1"
+        aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header border-0">
+                    <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center pb-5">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <!-- Portfolio Modal - Title-->
+                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">
+                                    Mielenterveys
+                                </h2>
+                                <!-- Icon Divider-->
+                                <div class="divider-custom">
+                                    <div class="divider-custom-line"></div>
+                                </div>
+                                <!-- Portfolio Modal - Image-->
+                                <img class="img-fluid rounded mb-5" src="assets/img/portfolio/Yksi_Pieni_Linkki.png"
+                                    alt="..." />
+                                <!-- Portfolio Modal - Text-->
+                                <p class="mb-4">
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipisicing elit. Mollitia neque
+                                    assumenda ipsam nihil, molestias magnam,
+                                    recusandae quos quis inventore quisquam
+                                    velit asperiores, vitae? Reprehenderit
+                                    soluta, eos quod consequuntur itaque.
+                                    Nam.
+                                </p>
+                                <button class="btn btn-primary" data-bs-dismiss="modal">
+                                    <i class="fas fa-xmark fa-fw"></i>
+                                    Sulje
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Portfolio Modal 2-->
+    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" aria-labelledby="portfolioModal2"
+        aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header border-0">
+                    <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center pb-5">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <!-- Portfolio Modal - Title-->
+                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">
+                                    Vertaistuki
+                                </h2>
+                                <!-- Icon Divider-->
+                                <div class="divider-custom">
+                                    <div class="divider-custom-line"></div>
+                                </div>
+                                <!-- Portfolio Modal - Image-->
+                                <img class="img-fluid rounded mb-5" src="assets/img/portfolio/Rectangle 6.png"
+                                    alt="..." />
+                                <!-- Portfolio Modal - Text-->
+                                <p class="mb-4">
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipisicing elit. Mollitia neque
+                                    assumenda ipsam nihil, molestias magnam,
+                                    recusandae quos quis inventore quisquam
+                                    velit asperiores, vitae? Reprehenderit
+                                    soluta, eos quod consequuntur itaque.
+                                    Nam.
+                                </p>
+                                <button class="btn btn-primary" data-bs-dismiss="modal">
+                                    <i class="fas fa-xmark fa-fw"></i>
+                                    Sulje
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Portfolio Modal 3-->
+    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" aria-labelledby="portfolioModal3"
+        aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header border-0">
+                    <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center pb-5">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <!-- Portfolio Modal - Title-->
+                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">
+                                    Ryhmätuki
+                                </h2>
+                                <!-- Icon Divider-->
+                                <div class="divider-custom">
+                                    <div class="divider-custom-line"></div>
+                                </div>
+                                <!-- Portfolio Modal - Image-->
+                                <img class="img-fluid rounded mb-5" src="assets/img/portfolio/group-therapy.png"
+                                    alt="..." />
+                                <!-- Portfolio Modal - Text-->
+                                <p class="mb-4">
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipisicing elit. Mollitia neque
+                                    assumenda ipsam nihil, molestias magnam,
+                                    recusandae quos quis inventore quisquam
+                                    velit asperiores, vitae? Reprehenderit
+                                    soluta, eos quod consequuntur itaque.
+                                    Nam.
+                                </p>
+                                <button class="btn btn-primary" data-bs-dismiss="modal">
+                                    <i class="fas fa-xmark fa-fw"></i>
+                                    Sulje
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Portfolio Modal 4-->
+    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" aria-labelledby="portfolioModal4"
+        aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header border-0">
+                    <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center pb-5">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <!-- Portfolio Modal - Title-->
+                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">
+                                    Henkisen
+                                </h2>
+                                <br />
+                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">
+                                    terveyden vaaliminen
+                                </h2>
+                                <!-- Icon Divider-->
+                                <div class="divider-custom">
+                                    <div class="divider-custom-line"></div>
+                                </div>
+                                <!-- Portfolio Modal - Image-->
+
+
+                                <!-- Portfolio Modal - Text-->
+                                <p class="mb-4">
+                                    Tökkiikö opiskelu? Vaivaako motivaation puute vai jokin pahempi? Onkovaikea päästä ammattilaiselle puhumaan?<br/>
+                                    Juttele muiden opiskelijoiden kanssa ja saa selvyyttä omaan tilaan. Meidän henkisen terveyden opiskelijalähettiläämme <br/>
+                                    kertovat mielellään sinulle heidän kokemuksistaan diagnoosin hakemisesta, oireistaan ja tarjoavat <br/>
+                                    realistista tukea sekä motivaatiota hakeutua juttelemaan ammattilaiselle.
+
+
+                                </p>
+                                <button class="btn btn-primary" data-bs-dismiss="modal">
+                                    <i class="fas fa-xmark fa-fw"></i>
+                                    Sulje
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Portfolio Modal 5-->
+    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" aria-labelledby="portfolioModal5"
+        aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header border-0">
+                    <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center pb-5">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <!-- Portfolio Modal - Title-->
+                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">
+                                    Liikuntalomakkeen
+                                </h2>
+                                <br />
+                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">
+                                    täyttäminen
+                                </h2>
+
+
+                                <!-- Icon Divider-->
+                                <div class="divider-custom">
+                                    <div class="divider-custom-line"></div>
+                                    </div>
+                                    <!-- Portfolio Modal - Text-->
+                                    <p class="mb-4">
+                                        Haluaisitko aloittaa liikunnan, mutta yksin aloittaminen tuntuu hankalalta? <br/>
+                                        Hae meidän lomakkeemme avulla liikuntakaveria! Kirjaa alla olevaan lomakkeeseen tietoja itsestäsi,<br/>
+                                        ruksita sitten oma liikunnantasosi, millaisella tasolla haluat liikuntakaverisi olevan ja mitkä liikuntalajit sinua kiinnostavat!<br/>
+                                        Pyrimme sitten tietojen perusteella löytämään sinulle sopivan liikuntakaverin.
+                                   
+                                    </p>
+                                <button class="btn btn-primary" data-bs-dismiss="modal">
+                                    <i class="fas fa-xmark fa-fw"></i>
+                                    Sulje
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Portfolio Modal 6-->
+    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" aria-labelledby="portfolioModal6"
+        aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header border-0">
+                    <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center pb-5">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <!-- Portfolio Modal - Title-->
+                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">
+                                    Miksi taukojumpat?
+                                </h2>
+                                <!-- Icon Divider-->
+                                <div class="divider-custom">
+                                    <div class="divider-custom-line"></div>
+                                </div>
+                                <!-- Portfolio Modal - Text-->
+                                <p class="mb-4">
+                                    Pikkulinnut kertoivat, että hartioitasi ja niskaasi särkee. Oletko ajatellut taukojumppaa? <br/>
+                                    Ah, sen aloittaminen on hirmu hankalaa. No, me keräsimme alla olevana videoon erilaisia liikkeitä, <br/>
+                                    jotka voit tehdä nousematta tuolistasi. Näin voit opiskelun, pelaamisen tai lukemisen ohella venytellä nousematta ja välttää kipuja!
+                                </p>
+                                <button class="btn btn-primary" data-bs-dismiss="modal">
+                                    <i class="fas fa-xmark fa-fw"></i>
+                                    Sulje
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
 </body>
+
+
 </html>
+
+
