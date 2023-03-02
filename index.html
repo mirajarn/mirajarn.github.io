@@ -15,7 +15,6 @@
         type="text/css" />
     <link href="styles.css" rel="stylesheet" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
-    <script src="tiedosto.js"></script>
 </head>
 
 
@@ -173,30 +172,33 @@
             <br />
             <div class="row justify-content-center">
                 <div class="col-lg-8 col-xl-7">
-                    <form id="contactForm">
-                        <div class="form-floating mb-3">
-                            <input class="form-control" id="nimi" type="text"/>
-                            <label for="name">Etu- ja sukunimi</label>
-                                
+
+                    <form>
+                        <div class="form-group">
+                          <label for="exampleFormControlInput1">Etu- ja sukunimi</label>
+                          <input class="form-control" id="exampleFormControlInput1" placeholder="Kirjoita nimesi">
+                          
+                          <label for="exampleFormControlInput2">Sähköpostiosoite</label>
+                          <input class="form-control" id="exampleFormControlInput2" placeholder="Kirjoita  sähköpostiosoiteesi">
+                          
+                          <label for="exampleFormControlInput3">Puhelinnumero</label>
+                          <input class="form-control" id="exampleFormControlInput3" placeholder="Kirjoita puhelinnumerosi">
                         </div>
-                        <div class="form-floating mb-3">
-                            <input class="form-control" id="sposti" type="email"/>
-                            <label for="sposti">Sähköpostiosoite</label>
-                        </div>
-                        <div class="form-floating mb-3">
-                            <input class="form-control" id="puhnro" type="tel" />
-                            <label for="puhnro">Puhelinumero</label>
-                        </div>
-                        <div class="form-floating mb-3">
-                            <textarea class="form-control" id="viesti" type="text" style="height: 10rem"
-                                data-sb-validations="required"></textarea>
-                            <label for="viesti">Kirjoita viesti</label>
+                        <div class="form-group">
+                          <label for="exampleFormControlSelect1">Kuinka usein liikut?</label>
+                          <select class="form-control" id="exampleFormControlSelect1" >
                             
+                            <option>Alle 1 tunti viikossa</option>
+                            <option>1-3 tuntia viikossa</option>
+                            <option>3-5 tuntia viikossa</option>
+                            <option>yli 5 tuntia viikossa</option>
+                          </select>
                         </div>
-                        <button onclick="tarkistaTiedot()" class="btn btn-primary">
-                            Lähetä
-                        </button>
-                    </form>
+                        <div class="form-group">
+                          <label for="exampleFormControlTextarea1">Kirjoita viestisi</label>
+                          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        </div>
+                      </form>
                 </div>
 
 
@@ -449,7 +451,7 @@
                                     <p class="mb-4">
                                         Haluaisitko aloittaa liikunnan, mutta yksin aloittaminen tuntuu hankalalta? <br/>
                                         Hae meidän lomakkeemme avulla liikuntakaveria! Kirjaa alla olevaan lomakkeeseen tietoja itsestäsi,<br/>
-                                        ruksita sitten oma liikunnantasosi, millaisella tasolla haluat liikuntakaverisi olevan ja mitkä liikuntalajit sinua kiinnostavat!<br/>
+                                        valitse sitten oma liikunnantasosi ja kirjoita lomakkeeseen mitkä liikuntalajit sinua kiinnostavat!
                                         Pyrimme sitten tietojen perusteella löytämään sinulle sopivan liikuntakaverin.
                                    
                                     </p>
