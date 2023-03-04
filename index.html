@@ -71,9 +71,6 @@
         <div class="bg-circle-3 bg-circle"></div>
         <div class="bg-circle-4 bg-circle"></div>
     </header>
-    <!-- Portfolio Section-->
-    <style>
-    </style>
     <section class="page-section bg-primary portfolio" id="henkinen_terveys">
         <div class="container">
             <!-- Portfolio Section Heading-->
@@ -151,92 +148,22 @@
         </div>
     </section>
 
-    <style>
-        #liikuntaHoverBox {
-            display: none;
-            background-color: #323232;
-            height: 20px;
-            width: 20px;
-            color: black;
-            border-radius: 3px;
-            font-size: 14px;
-        }
 
-        .kysymysmerkki:hover #liikuntaHoverBox {
-            display: block;
-        }
-        .kysymysmerkki {
-            float: right;
-            color: rgba(var(--bs-secondary-rgb));
-            cursor: "pointer";
-        }
-    </style>
     <!-- Contact Section-->
     <section class="page-section bg-light " id="liikunta">
         <div class="container">
             <!-- Contact Section Heading-->
-            
-    <script>
-        var tooltip = document.querySelectorAll('.coupontooltip');
-    
-    document.addEventListener('mousemove', fn, false);
-    
-    function fn(e) {
-        for (var i=tooltip.length; i--;) {
-            tooltip[i].style.left = e.pageX + 'px';
-            tooltip[i].style.top = e.pageY + 'px';
-        }
-    }
-    </script>
-    <div class="couponcode color:red " >First Link
-        <span class="coupontooltip">Content 1</span>
-    </div>
-    
-    <div class="couponcode">Second Link
-        <span class="coupontooltip"> Content 2</span>
-    </div>
-    <style>
-    .couponcode:hover .coupontooltip {
-        display: block;
-    }
-    
-    
-    .coupontooltip {
-        display: none;
-        background: #C8C8C8;
-        margin-left: 28px;
-        padding: 10px;
-        position: absolute;
-        z-index: 1000;
-        width:200px;
-        height:100px;
-    }
-    
-    .couponcode {
-        margin:100px;
-    }
-    </style>
-
             <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">
-                
                 <div class="kysymysmerkki" data-bs-toggle="modal" data-bs-target="#portfolioModal5">
-                    <i class="fas fa-question-circle" style="font-size:36px"></i>
-
-                    <div id="liikuntaHoverBox">
-                        Lue lisää
-                    </div>
+                    <i class=" fas fa-question-circle" style="font-size:36px"></i>
                 </div>
-                Liikuntalomake
+Liikuntalomake
             </h2>
             <!-- Icon Divider-->
             <div class="divider-custom">
                 <div class="divider-custom-line"></div>
             </div>
             <br />
-
-
-            <br />
-
             <script>
 
                 const handleMessage = () => {
@@ -266,6 +193,7 @@
 
                         showWarningMessage.style.display = showWarningMessage.style.display == "block";;
                     }
+                    
                 }
             </script>
             <div class="row justify-content-center">
@@ -330,26 +258,33 @@
 
         </div>
     </section>
+    <!-- About Section-->
     <section class="page-section bg-primary text-white mb-0" id="taukojumpat">
         <div class="container">
+            <!-- About Section Heading-->
             <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">
                 <div class="kysymysmerkki" data-bs-toggle="modal" data-bs-target="#portfolioModal6">
                     <i class=" fas fa-question-circle" style="font-size:36px"></i>
                 </div>
-                Taukojumpat
+
+Taukojumpat
             </h2>
+            <!-- Icon Divider-->
             <div class="divider-custom">
                 <div class="divider-custom-line"></div>
             </div>
+            <!-- About Section Content-->
             <div class="row justify-content-center">
                 <iframe height="650" width="400" src="https://www.youtube.com/embed/pVtj6I0akuQ">
                 </iframe>
             </div>
         </div>
     </section>
+    <!-- Footer-->
     <footer class="footer text-center">
         <div class="container">
             <div class="row">
+                <!-- Footer Location-->
                 <div class="col-lg-4 mb-5 mb-lg-0">
                     <h4>Yhteystiedot</h4>
                     <p>050 505 0505</p>
@@ -358,6 +293,8 @@
                 </div>
             </div>
     </footer>
+    <!-- Portfolio Modals-->
+    <!-- Portfolio Modal 1-->
     <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" aria-labelledby="portfolioModal1"
         aria-hidden="true">
         <div class="modal-dialog modal-xl">
@@ -369,13 +306,17 @@
                     <div class="container">
                         <div class="row justify-content-center">
                             <div class="col-lg-8">
+                                <!-- Portfolio Modal - Title-->
                                 <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">
                                     Mielenterveys
                                 </h2>
+                                <!-- Icon Divider-->
                                 <div class="divider-custom">
                                     <div class="divider-custom-line"></div>
                                 </div>
+                                <!-- Portfolio Modal - Image-->
                                 <img class="img-fluid rounded mb-5" src="kuvat/Yksi_Pieni_Linkki.png" alt="..." />
+                                <!-- Portfolio Modal - Text-->
                                 <p class="mb-4">
                                     Lorem ipsum dolor sit amet, consectetur
                                     adipisicing elit. Mollitia neque
@@ -396,6 +337,7 @@
             </div>
         </div>
     </div>
+    <!-- Portfolio Modal 2-->
     <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" aria-labelledby="portfolioModal2"
         aria-hidden="true">
         <div class="modal-dialog modal-xl">
@@ -407,14 +349,17 @@
                     <div class="container">
                         <div class="row justify-content-center">
                             <div class="col-lg-8">
+                                <!-- Portfolio Modal - Title-->
                                 <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">
                                     Vertaistuki
                                 </h2>
+                                <!-- Icon Divider-->
                                 <div class="divider-custom">
                                     <div class="divider-custom-line"></div>
                                 </div>
+                                <!-- Portfolio Modal - Image-->
                                 <img class="img-fluid rounded mb-5" src="kuvat/Rectangle 6.png" alt="..." />
-
+                                <!-- Portfolio Modal - Text-->
                                 <p class="mb-4">
                                     Lorem ipsum dolor sit amet, consectetur
                                     adipisicing elit. Mollitia neque
@@ -435,6 +380,7 @@
             </div>
         </div>
     </div>
+    <!-- Portfolio Modal 3-->
     <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" aria-labelledby="portfolioModal3"
         aria-hidden="true">
         <div class="modal-dialog modal-xl">
@@ -446,14 +392,17 @@
                     <div class="container">
                         <div class="row justify-content-center">
                             <div class="col-lg-8">
+                                <!-- Portfolio Modal - Title-->
                                 <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">
                                     Ryhmätuki
                                 </h2>
+                                <!-- Icon Divider-->
                                 <div class="divider-custom">
                                     <div class="divider-custom-line"></div>
                                 </div>
+                                <!-- Portfolio Modal - Image-->
                                 <img class="img-fluid rounded mb-5" src="kuvat/group-therapy.png" alt="..." />
-
+                                <!-- Portfolio Modal - Text-->
                                 <p class="mb-4">
                                     Lorem ipsum dolor sit amet, consectetur
                                     adipisicing elit. Mollitia neque
@@ -474,6 +423,7 @@
             </div>
         </div>
     </div>
+    <!-- Portfolio Modal 4-->
     <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" aria-labelledby="portfolioModal4"
         aria-hidden="true">
         <div class="modal-dialog modal-xl">
@@ -485,6 +435,7 @@
                     <div class="container">
                         <div class="row justify-content-center">
                             <div class="col-lg-8">
+                                <!-- Portfolio Modal - Title-->
                                 <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">
                                     Henkisen
                                 </h2>
@@ -492,9 +443,14 @@
                                 <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">
                                     terveyden vaaliminen
                                 </h2>
+                                <!-- Icon Divider-->
                                 <div class="divider-custom">
                                     <div class="divider-custom-line"></div>
                                 </div>
+                                <!-- Portfolio Modal - Image-->
+
+
+                                <!-- Portfolio Modal - Text-->
                                 <p class="mb-4">
                                     Tökkiikö opiskelu? Vaivaako motivaation puute vai jokin pahempi? Onkovaikea päästä
                                     ammattilaiselle puhumaan?<br />
@@ -517,6 +473,7 @@
             </div>
         </div>
     </div>
+    <!-- Portfolio Modal 5-->
     <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" aria-labelledby="portfolioModal5"
         aria-hidden="true">
         <div class="modal-dialog modal-xl">
@@ -528,6 +485,7 @@
                     <div class="container">
                         <div class="row justify-content-center">
                             <div class="col-lg-8">
+                                <!-- Portfolio Modal - Title-->
                                 <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">
                                     Liikuntalomakkeen
                                 </h2>
@@ -537,9 +495,11 @@
                                 </h2>
 
 
+                                <!-- Icon Divider-->
                                 <div class="divider-custom">
                                     <div class="divider-custom-line"></div>
                                 </div>
+                                <!-- Portfolio Modal - Text-->
                                 <p class="mb-4">
                                     Haluaisitko aloittaa liikunnan, mutta yksin aloittaminen tuntuu hankalalta? <br />
                                     Hae meidän lomakkeemme avulla liikuntakaveria! Kirjaa alla olevaan lomakkeeseen
@@ -560,6 +520,7 @@
             </div>
         </div>
     </div>
+    <!-- Portfolio Modal 6-->
     <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" aria-labelledby="portfolioModal6"
         aria-hidden="true">
         <div class="modal-dialog modal-xl">
@@ -571,12 +532,15 @@
                     <div class="container">
                         <div class="row justify-content-center">
                             <div class="col-lg-8">
+                                <!-- Portfolio Modal - Title-->
                                 <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">
                                     Miksi taukojumpat?
                                 </h2>
+                                <!-- Icon Divider-->
                                 <div class="divider-custom">
                                     <div class="divider-custom-line"></div>
                                 </div>
+                                <!-- Portfolio Modal - Text-->
                                 <p class="mb-4">
                                     Pikkulinnut kertoivat, että hartioitasi ja niskaasi särkee. Oletko ajatellut
                                     taukojumppaa? <br />

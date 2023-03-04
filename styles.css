@@ -11896,8 +11896,6 @@ html {
     color: #818d99;
 }
 
-
-
 .headerBG {
     background-color: #c8ddd0;
     height: 940px;
@@ -12035,4 +12033,9 @@ header.masthead .bg-circle {
 #valinta,
 #viesti {
     margin-bottom: 10px;
+}
+
+.kysymysmerkki{
+    cursor: pointer;
+    float: right;
 }
