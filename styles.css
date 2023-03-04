@@ -11,16 +11,7 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
 :root {
-    --bs-blue: #0d6efd;
-    --bs-indigo: #6610f2;
-    --bs-purple: #6f42c1;
-    --bs-pink: #d63384;
-    --bs-red: #dc3545;
-    --bs-orange: #fd7e14;
-    --bs-yellow: #ffc107;
-    --bs-green: #198754;
     --bs-teal: #ddd0c8;
-    --bs-cyan: #0dcaf0;
     --bs-white: #fff;
     --bs-gray: #6c757d;
     --bs-gray-dark: #343a40;
@@ -37,10 +28,6 @@
     --bs-primary: #ddd0c8;
     --bs-secondary: #323232;
 
-    --bs-success: #198754;
-    --bs-info: #0dcaf0;
-    --bs-warning: #ffc107;
-    --bs-danger: #dc3545;
     --bs-light: #f8f9fa;
     --bs-dark: #212529;
 
@@ -2270,9 +2257,9 @@ progress {
 .form-control:focus {
     color: #212529;
     background-color: #fff;
-    border-color: #8ddece;
+    border-color: #686868;
     outline: 0;
-    box-shadow: 0 0 0 0.25rem rgba(26, 188, 156, 0.25);
+    box-shadow: 0 0 0 0.25rem rgba(0, 0, 0, 0.25);
 }
 .form-control::-webkit-date-and-time-value {
     height: 1.5em;
