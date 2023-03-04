@@ -15,6 +15,7 @@
         type="text/css" />
     <link href="styles.css" rel="stylesheet" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="toiminnallisuus.js" ></script>
 </head>
 
 
@@ -162,25 +163,53 @@ Liikuntalomake
                 <div class="divider-custom-line"></div>
             </div>
             <br />
-            
-            <script>
-                function validateForm() {
-                    var x = document.forms["myForm"]["fname"].value;
-                    if (x == "") {
-                        alert("Name must be filled out");
-                        return false;
-                    }
-                }
-            </script>
             <div class="row justify-content-center">
                 <div class="col-lg-8 col-xl-7">
-                    
-                    <form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post" required>
-                        Name: <input type="text" name="fname">
-                        <input type="submit" value="Submit">
-                      </form>
-                      
-                    <button class="btn btn-primary" onclick="handleMessage()">Lähetä</button>
+                    <form >
+                        <div class="form-group">
+
+
+                            
+                            <label for="nimet">Etu- ja sukunimi*
+
+                            </label>
+                            <input class="form-control" id="nimet" placeholder="Kirjoita nimesi">
+
+
+
+                            <label for="sposti">Sähköpostiosoite*</label>
+                            <input class="form-control" id="sposti" placeholder="Kirjoita sähköpostiosoiteesi">
+
+
+
+                            <label for="puhnro">Puhelinnumero*</label>
+                            <input class="form-control" id="puhnro" placeholder="Kirjoita puhelinnumerosi">
+
+                            </div>
+
+
+                            
+                            <p id="demo"></p>
+                            <label for="valinta">Kuinka usein liikut?*</label>
+                            <select class="form-control" id="valinta">
+                                <option selected="true" id="defaultValinta">Valitse itsellesi sopiva kohta</option>
+                                <option >Alle 1 tunti viikossa</option>
+                                <option>1-3 tuntia viikossa</option>
+                                <option>3-5 tuntia viikossa</option>
+                                <option>yli 5 tuntia viikossa</option>
+                            </select>
+
+
+
+                        
+                        <div class="form-group">
+
+                            <label for="viesti">Kirjoita viestisi*</label>
+                            <textarea class="form-control" id="viesti" rows="3"></textarea>
+                        </div>
+
+                    </form>
+                    <button class="btn btn-primary" onclick="checkNameInput(); checkEmailInput();checkTelInput();checkMessageInput(); checkOptInput()">Lähetä</button>
 
                 </div>
 
@@ -438,7 +467,8 @@ Taukojumpat
                                     tietoja itsestäsi,<br />
                                     valitse sitten oma liikunnantasosi ja kirjoita lomakkeeseen mitkä liikuntalajit
                                     sinua kiinnostavat!
-                                    Pyrimme sitten tietojen perusteella löytämään sinulle sopivan liikuntakaverin.
+                                    Pyrimme sitten tietojen perusteella löytämään sinulle sopivan liikuntakaverin. <br/>
+                                    <p style="font-weight: bold;" >Huom! Tähdellä (*) merkityt kentät ovat pakollisia!</p>
 
                                 </p>
                                 <button class="btn btn-primary" data-bs-dismiss="modal">
