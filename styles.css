@@ -11896,16 +11896,7 @@ html {
     color: #818d99;
 }
 
-.kysymysmerkki {
-    float: right;
-    color: rgba(var(--bs-secondary-rgb));
-    cursor: "help";
-}
 
-.kysymysmerkki:hover {
-    color: black;
-    cursor: pointer;
-}
 
 .headerBG {
     background-color: #c8ddd0;
@@ -12027,3 +12018,21 @@ header.masthead .bg-circle {
 }
 
 
+
+#varoitusViestiNimet, #varoitusViestiSposti, #varoitusViestiPuhnro, #varoitusViestiValinta, #varoitusViestiViesti {
+    background-color: #ee6762;
+    color: black;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 3px;
+    position: relative;
+}
+
+
+#nimet,
+#sposti,
+#puhnro,
+#valinta,
+#viesti {
+    margin-bottom: 10px;
+}
