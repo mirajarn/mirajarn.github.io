@@ -78,8 +78,6 @@
                 <div class="kysymysmerkki" data-bs-toggle="modal" data-bs-target="#portfolioModal4">
                     <i class=" fas fa-question-circle" style="font-size:36px"></i>
                 </div>
-
-
                 Henkinen terveys
             </h2>
             <!-- Icon Divider-->
@@ -164,90 +162,24 @@ Liikuntalomake
                 <div class="divider-custom-line"></div>
             </div>
             <br />
+            
             <script>
-
-                const handleMessage = () => {
-                    const showWarningName = document.getElementById("varoitusViestiNimet")
-                    const showWarningEmail = document.getElementById("varoitusViestiSposti")
-                    const showWarningTel = document.getElementById("varoitusViestiPuhnro")
-                    const showWarningChoice = document.getElementById("varoitusViestiValinta")
-                    const showWarningMessage = document.getElementById("varoitusViestiViesti")
-                    const x = document.getElementById("defaultValinta")
-                    if (nimet.value === "") {
-
-                        showWarningName.style.display = showWarningName.style.display == "block";;
+                function validateForm() {
+                    var x = document.forms["myForm"]["fname"].value;
+                    if (x == "") {
+                        alert("Name must be filled out");
+                        return false;
                     }
-                    if (sposti.value === "") {
-
-                        showWarningEmail.style.display = showWarningEmail.style.display == "block";;
-                    }
-                    if (puhnro.value === "") {
-
-                        showWarningTel.style.display = showWarningTel.style.display == "block";;
-                    }
-                    if (x.selected === true) {
-
-                        showWarningChoice.style.display = showWarningChoice.style.display == "block";;
-                    }
-                    if (viesti.value === "") {
-
-                        showWarningMessage.style.display = showWarningMessage.style.display == "block";;
-                    }
-                    
                 }
             </script>
             <div class="row justify-content-center">
                 <div class="col-lg-8 col-xl-7">
-                    <form>
-                        <div class="form-group">
-
-                            <div id="varoitusViestiNimet" style="display:none; margin-bottom: 7px; margin-top: 7px;">
-                                Muista kirjoittaa nimesi!</div>
-
-                            <label for="nimet">Etu- ja sukunimi</label>
-                            <input class="form-control" id="nimet" placeholder="Kirjoita nimesi">
-
-
-                            <div id="varoitusViestiSposti" style="display:none; margin-bottom: 7px; margin-top: 7px;">
-                                Muista kirjoittaa voimassaoleva
-                                sähköpostiosoite!</div>
-                            <label for="sposti">Sähköpostiosoite</label>
-                            <input class="form-control" id="sposti" placeholder="Kirjoita sähköpostiosoiteesi">
-
-                            <div id="varoitusViestiPuhnro" style="display:none; margin-bottom: 7px; margin-top: 7px;">
-                                Muista kirjoittaa voimassaoleva
-                                puhelinnumero!</div>
-
-
-                            <label for="puhnro">Puhelinnumero</label>
-                            <input class="form-control" id="puhnro" placeholder="Kirjoita puhelinnumerosi">
-
-                        </div>
-                        <div class="form-group">
-                            <div id="varoitusViestiValinta" style="display:none; margin-bottom: 7px; margin-top: 7px;">
-                                Muista valita liikuntamäärä!</div>
-
-                            <label for="valinta">Kuinka usein liikut?</label>
-                            <select class="form-control" id="valinta">
-                                <option selected="true" id="defaultValinta">Valitse itsellesi sopiva kohta</option>
-                                <option>Alle 1 tunti viikossa</option>
-                                <option>1-3 tuntia viikossa</option>
-                                <option>3-5 tuntia viikossa</option>
-                                <option>yli 5 tuntia viikossa</option>
-                            </select>
-
-
-
-                        </div>
-                        <div class="form-group">
-                            <div id="varoitusViestiViesti" style="display:none; margin-bottom: 7px; margin-top: 7px;">
-                                Muista kirjoittaa viesti!</div>
-
-                            <label for="viesti">Kirjoita viestisi</label>
-                            <textarea class="form-control" id="viesti" rows="3"></textarea>
-                        </div>
-
-                    </form>
+                    
+                    <form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post" required>
+                        Name: <input type="text" name="fname">
+                        <input type="submit" value="Submit">
+                      </form>
+                      
                     <button class="btn btn-primary" onclick="handleMessage()">Lähetä</button>
 
                 </div>
